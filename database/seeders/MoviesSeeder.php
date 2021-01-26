@@ -31,7 +31,7 @@ class MoviesSeeder extends Seeder
                 "name" => $movie["title"],
                 "genre" => implode(",", $genres),
                 "release_date" => $movie["release_date"],
-                "details" => '<a href="javascript:void('.$movie["id"].')">Full Info</a>'
+                "details" => '<a href="javascript:fullDetails('.$movie["id"].')">Full Info</a>'
             ]);
         }
     }
